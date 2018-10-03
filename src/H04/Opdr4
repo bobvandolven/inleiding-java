@@ -1,0 +1,25 @@
+Wat is een platform?
+a platform is any hardware or software used to host an application or service.
+
+Waarom hoeft een programmeur in Java maar één keer een programma te schrijven voor verschillende platforms?
+
+
+Wat is bytecode?
+Bytecode is object-oriented programming (OOP) die is gecompileerd om te worden
+uitgevoerd op een virtual machine (VM) in plaats van een central processing unit (CPU).
+
+Wat doet JVM?
+De Java Virtual Machine (JVM) is de runtime-engine van het Java-platform, waarmee elk programma
+geschreven in Java of een andere taal gecompileerd naar Java bytecode kan worden uitgevoerd
+op elke computer met een native JVM.
+
+Met welke methode kun je een vierkant tekenen?
+Met de methode drawRect()
+
+Noem drie methodes waarmee je een cirkel kunt tekenen
+g.drawRoundRect(20, 20, 100, 50, 10, 10);
+g.fillRoundRect(20, 20, 100, 50, 10, 10);
+g.drawOval(20, 20, 50, 100);
+
+Waarom worden opdrachten voor het scherm in paint() gezet en niet in een andere methode?
+omdat je een project maakt met tekenen

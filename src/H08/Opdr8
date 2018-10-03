@@ -1,0 +1,18 @@
+1. Wat is event-handling?
+-  Event handling is the receipt of an event at some event handler from an event
+   producer and subsequent processes.
+
+2. Wat is een gebruikersinterface?
+-  De middelen waarmee de gebruiker en een computersysteem een ​​wisselwerking hebben.
+
+3. Waarom moet er voor een knop wel en voor een tekst geen event-handling geprogrammeerd worden?
+-  Omdat je de knop een actie moet geven om te werken en tekst gewoon om erin te schrijven.
+
+4. Wat is een lege string?
+-  De lege string is het speciale geval waarin er geen symbool in de string staat.
+
+5. Wat is het verschil tussen een tekstvak en een label?
+-  U kunt in een tekstvak schrijven en een label kan niet worden gewijzigd.
+
+6. Waarom moeten getallen uit een tekstvak altijd geconverteerd worden naar een double of een int?
+-  zodat het kan worden op het scherm geschreven.

@@ -1,0 +1,8 @@
+1. Wat is het verschil tussen een while- en een for-lus?
+ - het is dezelfde, maar in de while-statement zit de teller buiten de tussen hakjes en aan de eind van de lus wordt het nogweer gezet
+
+2. Wat is het nesten van lussen?
+ -het nesten van lussen zijn lussen die nog een lus voorkomt in de body van een lus met geen einde
+
+3. Bekijk de volgende broncode, Wordt de lus uitgevoerd? Geef een verklaring voor je antwoord
+ - nee want het eind is 5 en als i kleiner dan eind zou zijn dan zou het optellen tot het naar eind wordt
