@@ -4,20 +4,20 @@ import java.applet.Applet;
 import java.awt.*;
 
 public class Praktijkopdracht extends Applet {
-            double a, b, c, d, e, math, result;
-            int SWAP, f;
+            double Gemidel1, Gemidel2, Gemidel3, divideDouble, multiply, math, result;
+            int SWAP, divideInt;
 
 
         public void init () {
-            a = 5.9;
-            b = 6.9;
-            c = 6.3;
-            d = 3;
-            e = 10;
-            f = 10;
-            math = (a+b+c) / d * e;
-            SWAP = (int)math;
-            result = (double)SWAP / f;
+            Gemidel1 = 5.9;
+            Gemidel2 = 6.9;
+            Gemidel3 = 6.3;
+            divideDouble = 3;
+            multiply = 10;
+            divideInt = 10;
+            math = (Gemidel1+Gemidel2+Gemidel3) / divideDouble * multiply; // combining all 3results together than dividing it into 3 than multiply with 10
+            SWAP = (int)math; // TypeCasting into Int
+            result = (double)SWAP / divideInt; // TypeCastin to Double than dividing it with 10
 
 
         }

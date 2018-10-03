@@ -9,7 +9,7 @@ public class Opdr11d1 extends Applet {
 
     public void paint(Graphics g) {
         int counter;
-        int y = 0;
+        int y = 0; // y = position Y of the string
 
         for(counter = 1; counter < 11; counter++) {
             y += 20;

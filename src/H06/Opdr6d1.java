@@ -5,14 +5,14 @@ import java.awt.*;
 
 
 public class Opdr6d1 extends Applet {
-    double a, b, c, uitkomst;
+    double number1, number2, number3, uitkomst;
 
 
     public void init() {
-        a = 2;
-        b = 2;
-        c = 113;
-        uitkomst = c / (a + b);
+        number1 = 2;
+        number2 = 2;
+        number3 = 113;
+        uitkomst = number3 / (number1 + number2);
     }
 
     public void paint(Graphics g) {

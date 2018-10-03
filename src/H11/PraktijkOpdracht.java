@@ -10,9 +10,9 @@ public class PraktijkOpdracht extends Applet {
         Button ok;
         Label label;
         TextField text;
-        String s, d[];
+        String string, Array[];
         int counter;
-        int x;
+        int x; // x is used to typecast the string into an INT
 
     public void init () {
 
@@ -25,25 +25,25 @@ public class PraktijkOpdracht extends Applet {
         add(label);
         add(text);
         add(ok);
-        s = "";
+        string = "";
 
     }
 
     public void paint (Graphics g) {
-        if (d != null)
-        for (int i = 0; i < d.length; i++)
-        g.drawString( d[i] , 30, 50+20*i );
+        if (Array != null)
+        for (int i = 0; i < Array.length; i++) // i is used for the amount of times that the array has to multiply its Y position to have enough space for each arrays
+        g.drawString( Array[i] , 30, 50+20*i );
     }
 
     class okListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            s = text.getText();
-            x = Integer.parseInt( s );
+            string = text.getText();
+            x = Integer.parseInt(string);
             text.setText("");
             int maxnum = 10;
-            d = new String[maxnum];
+            Array = new String[maxnum];
             for(counter = 1; counter <= maxnum; counter++) {
-                d[counter-1] = (counter + " * " + x + " = " + counter*x);
+                Array[counter-1] = (counter + " * " + x + " = " + counter*x);
             }
 
             repaint();

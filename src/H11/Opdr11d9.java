@@ -11,8 +11,8 @@ public class Opdr11d9 extends Applet {
 
     public void paint(Graphics g) {
         setBackground(Color.gray);
-        for (int y = 0; y < 8; y++)
-        for (int x = 0; x < 8; x++) {
+        for (int y = 0; y < 8; y++)   // y = position Y of the string
+        for (int x = 0; x < 8; x++) { // x = position X of the string
             g.setColor(Color.white);
             if((y % 2 == 0 && x % 2 == 0) ||
                      (y % 2 == 1 && x % 2 == 1))

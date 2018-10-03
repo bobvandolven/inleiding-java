@@ -14,20 +14,25 @@ public class PraktiijkOpdracht extends Applet {
 
     public void init (){
         setSize(400, 300);
+
         textField1 = new TextField(8);
         add(textField1);
+
         textField2 = new TextField(8);
         add(textField2);
 
         plus = new Button("+");
         plus.addActionListener( new plusListener() );
         add(plus);
+
         minus = new Button("-");
         minus.addActionListener( new minusListener() );
         add(minus);
+
         multiply = new Button("x");
         multiply.addActionListener( new multiplyListener());
         add(multiply);
+
         divide = new Button("/");
         divide.addActionListener( new divideListener());
         add(divide);
@@ -35,10 +40,8 @@ public class PraktiijkOpdracht extends Applet {
 
     class plusListener implements ActionListener {
         public void actionPerformed (ActionEvent event) {
-            String A = textField1.getText();
-            number1 = Double.parseDouble(A);
-            String B = textField2.getText();
-            number2 = Double.parseDouble(B);
+            number1 = Double.parseDouble(textField1.getText());
+            number2 = Double.parseDouble(textField2.getText());
             double result = number1 + number2;
             textField1.setText(String.valueOf(result));
             textField2.setText("");
@@ -48,10 +51,8 @@ public class PraktiijkOpdracht extends Applet {
 
     class minusListener implements ActionListener {
         public void actionPerformed (ActionEvent event) {
-            String A = textField1.getText();
-            number1 = Double.parseDouble(A);
-            String B = textField2.getText();
-            number2 = Double.parseDouble(B);
+            number1 = Double.parseDouble(textField1.getText());
+            number2 = Double.parseDouble(textField2.getText());
             double result = number1 - number2;
             textField1.setText(String.valueOf(result));
             textField2.setText("");
@@ -61,10 +62,8 @@ public class PraktiijkOpdracht extends Applet {
 
     class multiplyListener implements ActionListener {
         public void actionPerformed (ActionEvent event) {
-            String A = textField1.getText();
-            number1 = Double.parseDouble(A);
-            String B = textField2.getText();
-            number2 = Double.parseDouble(B);
+            number1 = Double.parseDouble(textField1.getText());
+            number2 = Double.parseDouble(textField2.getText());
             double result = number1 * number2;
             textField1.setText(String.valueOf(result));
             textField2.setText("");
@@ -74,10 +73,8 @@ public class PraktiijkOpdracht extends Applet {
 
     class divideListener implements ActionListener {
         public void actionPerformed (ActionEvent event) {
-            String A = textField1.getText();
-            number1 = Double.parseDouble(A);
-            String B = textField2.getText();
-            number2 = Double.parseDouble(B);
+            number1 = Double.parseDouble(textField1.getText());
+            number2 = Double.parseDouble(textField2.getText());
             double result = number1 / number2;
             textField1.setText(String.valueOf(result));
             textField2.setText("");

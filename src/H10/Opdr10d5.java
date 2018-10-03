@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 public class Opdr10d5 extends Applet {
     private TextField textbox, textbox2;
     private Label label;
-    private String s;
+    private String string;
     private Button plus;
     private double inputnumber, Passed;
     private double number1, number2;
@@ -34,7 +34,7 @@ public class Opdr10d5 extends Applet {
     }
 
     public void paint(Graphics g) {
-        g.drawString(s, 50, 80);
+        g.drawString(string, 50, 80);
         g.drawString(" 0 - 5.0 = Failed",200,80);
         g.drawString(" 5.5 - 10 = Passed", 200,100);
     }
@@ -47,16 +47,16 @@ public class Opdr10d5 extends Applet {
             textbox.setText(String.valueOf(result));
             textbox2.setText("");
 
-            s = textbox.getText();
-            inputnumber = Double.parseDouble(s);
+            string = textbox.getText();
+            inputnumber = Double.parseDouble(string);
             if (inputnumber == Passed) {
-                s = "" + inputnumber + " You Passed";
+                string = "" + inputnumber + " You Passed";
             }
             if (inputnumber < Passed) {
-                s = "" + inputnumber + " You Failed";
+                string = "" + inputnumber + " You Failed";
             }
             if (inputnumber > Passed) {
-                s = "" + inputnumber + " You Passed";
+                string = "" + inputnumber + " You Passed";
             }
             repaint();
         }

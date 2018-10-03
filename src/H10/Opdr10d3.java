@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 public class Opdr10d3 extends Applet {
     TextField textbox;
     Label label;
-    String s, text;
+    String string, text;
     int month;
 
     public void init() {
@@ -28,8 +28,8 @@ public class Opdr10d3 extends Applet {
 
     class textboxListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            s = textbox.getText();
-            month = Integer.parseInt( s);
+            string = textbox.getText();
+            month = Integer.parseInt( string );
             switch(month) {
                 case 1:
                     text = "January 31Days";

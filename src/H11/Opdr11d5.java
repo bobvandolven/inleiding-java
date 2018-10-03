@@ -9,8 +9,8 @@ public class Opdr11d5 extends Applet {
     }
 
     public void paint(Graphics g) {
-        int y = 50;
-        int x = 50;
+        int y = 50; // y = position of Y the string
+        int x = 50; // x = position of X the string
         int breedte = 10;
         int hoogte = 10;
         for (int kolom = 0; kolom < 5; kolom++) {

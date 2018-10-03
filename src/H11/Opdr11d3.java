@@ -4,25 +4,25 @@ import java.applet.Applet;
 import java.awt.*;
 
 public class Opdr11d3 extends Applet {
-    long num[];
+    long number[];
     public void init() {
-        num = new long[10];
+        number = new long[10];
 
-        for (int i = 0; i < num.length; i++) {
+        for (int i = 0; i < number.length; i++) {
             if (i > 0)
                 System.out.print(", ");
             if (i <= 1){
-                num[i]= 1;
+                number[i]= 1;
             }
             else {
-                num[i]= num[i-1]+num[i-2];
+                number[i]= number[i-1]+ number[i-2];
             }
-            System.out.print(num[i]);
+            System.out.print(number[i]);
         }
     }
 
     public void paint(Graphics g) {
-        for (int i = 0; i < num.length; i++) {
-        g.drawString(""+num[i] ,20 , 20+20*i);}
+        for (int i = 0; i < number.length; i++) {
+        g.drawString(""+ number[i] ,20 , 20+20*i);}
     }
 }

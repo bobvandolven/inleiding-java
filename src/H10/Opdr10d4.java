@@ -9,8 +9,8 @@ import java.awt.event.ActionListener;
 public class Opdr10d4 extends Applet {
     TextField textbox;
     Label label;
-    String s, text;
-    int month, year;
+    String string, text;
+    int year;
 
     public void init() {
         setSize(500, 300);
@@ -29,8 +29,8 @@ public class Opdr10d4 extends Applet {
 
     class textboxListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            s = textbox.getText();
-            year = Integer.parseInt(s);
+            string = textbox.getText();
+            year = Integer.parseInt( string );
             if ( (year % 4 == 0 && !(year % 100 == 0)) ||
                     year % 400 == 0 ) {
                 text = ""+ year + " is a leap year, feb has 29days";

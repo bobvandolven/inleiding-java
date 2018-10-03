@@ -10,7 +10,6 @@ public class Opdr8d3 extends Applet {
     private double number2;
     private TextField text;
     private Label label;
-    String s;
 
 
     public void init () {
@@ -20,7 +19,6 @@ public class Opdr8d3 extends Applet {
         label = new Label("Inclusief 21% Btw!");
         add(label);
         add(text);
-        s = "";
         number2 = 1.21;
     }
         public void paint (Graphics g) {

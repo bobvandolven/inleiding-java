@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 public class Opdr8d2 extends Applet {
 
     Button Man, Woman, Boys, Girls;
-    int ManI, WomanI, BoysI, GirlsI, total;
+    int ManInt, WomanInt, BoysInt, GirlsInt, total;
 
     public void init() {
 
@@ -29,26 +29,26 @@ public class Opdr8d2 extends Applet {
         Girls.addActionListener(new GirlsListener());
         add(Girls);
 
-        ManI = 0;
-        WomanI = 0;
-        BoysI = 0;
-        GirlsI = 0;
+        ManInt = 0;
+        WomanInt = 0;
+        BoysInt = 0;
+        GirlsInt = 0;
         total = 0;
     }
 
     public void paint(Graphics g) {
 
-        g.drawString("Amount of Gentlemen: " + ManI, 50, 50);
-        g.drawString("Amount of Ladies: " + WomanI, 50, 80);
-        g.drawString("Potential amount of Gentlemen: " + BoysI, 50, 110);
-        g.drawString("Potential amount of Ladies: " + GirlsI, 50, 140);
+        g.drawString("Amount of Gentlemen: " + ManInt, 50, 50);
+        g.drawString("Amount of Ladies: " + WomanInt, 50, 80);
+        g.drawString("Potential amount of Gentlemen: " + BoysInt, 50, 110);
+        g.drawString("Potential amount of Ladies: " + GirlsInt, 50, 140);
         g.drawString("Total: " + total, 50, 170);
-        total = ManI + WomanI + BoysI + GirlsI;
+        total = ManInt + WomanInt + BoysInt + GirlsInt;
     }
 
     class ManListener implements ActionListener {
         public void actionPerformed(ActionEvent event) {
-            ManI++;
+            ManInt++;
             total++;
             repaint();
 
@@ -57,7 +57,7 @@ public class Opdr8d2 extends Applet {
 
         class WomanListener implements ActionListener {
             public void actionPerformed(ActionEvent event) {
-                WomanI++;
+                WomanInt++;
                 total++;
                 repaint();
             }
@@ -65,7 +65,7 @@ public class Opdr8d2 extends Applet {
 
         class BoysListener implements ActionListener {
             public void actionPerformed(ActionEvent event) {
-                BoysI++;
+                BoysInt++;
                 total++;
                 repaint();
             }
@@ -73,7 +73,7 @@ public class Opdr8d2 extends Applet {
 
         class GirlsListener implements ActionListener {
             public void actionPerformed(ActionEvent event) {
-                GirlsI++;
+                GirlsInt++;
                 total++;
                 repaint();
             }

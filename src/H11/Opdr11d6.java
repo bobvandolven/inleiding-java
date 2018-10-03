@@ -9,8 +9,8 @@ public class Opdr11d6 extends Applet {
     }
 
     public void paint(Graphics g) {
-        for(int i = 1; i < 6; i++){
-            g.drawOval(50-i*6, 50-i*6, i*12, i*12);
+        for(int counter = 1; counter < 6; counter++){
+            g.drawOval(50-counter*6, 50-counter*6, counter*12, counter*12);
         }
     }
 }

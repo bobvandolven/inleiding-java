@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 public class Opdr10d2 extends Applet {
     TextField textbox;
     Label labeltext;
-    String s;
+    String string;
     int inputnumber, maxnumber, minnumber;
 
     public void init() {
@@ -31,8 +31,8 @@ public class Opdr10d2 extends Applet {
 
     class textboxListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            s = textbox.getText();
-            inputnumber = Integer.parseInt( s );
+            string = textbox.getText();
+            inputnumber = Integer.parseInt( string );
             if (inputnumber > maxnumber) {
                 maxnumber = inputnumber;
             }
